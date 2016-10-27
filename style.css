@@ -1,0 +1,279 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+	margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato, sans-serif;
+  padding: 0 0 15px 0;
+}
+p {
+  margin: 0 0 15px 0;
+}
+#top{
+	width: 100%;
+	height:30px;
+}
+.heading-primary {
+  font-size: 220%;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+  padding: 10px 0;
+}
+.heading-secondary {
+  font-size: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;  
+}
+.sub-heading {
+  font-style: italic;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+.navbar {
+    font-family: Montserrat, sans-serif;
+	height: 65px;		
+}
+
+li {
+	font-size: 10px;
+	margin-top: 0px;
+	
+}
+#jumbotron {
+    color: #ffffff;
+    padding: ;
+    font-family: Montserrat, sans-serif;
+	background-image: url(greyscale.jpg);
+	background-color: black;
+	background-size: cover;
+	}
+#jumbotron h2 {
+	color: #be1d3c;
+}
+	
+#jumbotron #register{
+        
+        padding: 15em;
+      }
+
+#register input {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 200;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+ #register input[type=submit] {
+        background-color: hsl(5, 72%, 38%);
+        background-color: #be1d3c;
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        box-sizing: border-box;
+        font-size: 20px;
+		cursor: pointer;
+      }
+
+	/* === #Carruosel ===*/
+#section1 h2{
+	color: #be1d3c;
+	
+	
+}	
+	.carousel-indicators li {
+    border-color: #be1d3c;
+}
+.carousel-indicators li.active {
+    background-color: #be1d3c;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 50px 0;
+}	
+.item span {
+    font-style: normal;
+}
+
+.left:hover {
+	background-color: rgba(255, 0, 0, 0.4);
+}
+.right:hover {
+	background-color: rgba(255, 0, 0, 0.4);
+
+}
+
+/* === #overlay ===*/
+
+#overlay  {
+	background-color: rgba(0, 0, 0, 0);
+	padding: 20px;	
+}
+
+#overlay  p, h2{
+	color: white;
+	text-align: justify;
+}
+.textwhite{
+	color: white;
+	
+}
+
+
+.hero-content {
+	padding-top: 40px;
+	padding-bottom: 20px; 
+	background-color: #be1d3c;
+}
+
+
+.gallery   {
+	margin: 40px 0;
+}
+
+.gallery .img {
+	position: relative;
+	padding-left: 0;
+	z-index: 4;
+}
+
+.gallery img {
+	margin: 0;
+	display: block;
+	transition: all .5s;
+}
+
+.front {
+	position: relative;
+}
+
+.back {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	width: 230px;
+	height: 230px;
+	background: #ccc;
+	color: #333;	
+}
+
+.back span {
+	display: block;
+	margin-top: 20px;
+}
+
+.back .pic_title {
+	background: #fff;
+	padding: 10px;
+}
+
+.back .pic_source {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+} 
+
+.caption {
+	position: absolute;
+	left: 7.043478%;
+	bottom: 80%;
+	color: #fff;
+	display: inline-block;	
+	text-shadow: 1px 1px 1px #333;
+	-webkit-transition:  all .5s;
+	transition: all .5s;
+}
+
+.btn-learn {
+	position: absolute;
+	color: #fff;
+	right: 10%;
+	bottom: 0;
+	opacity: 0;
+	display: inline-block;	
+	transition: all .5s;
+}
+/* 3D Transform */
+
+.gallery .img {
+	transition: all .5s;
+	perspective: 1000px;
+}
+
+.gallery .picture {
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	transform-style: preserve-3d;
+}
+
+.gallery .front  {	
+	transform: rotateY(0deg);
+ 
+}
+
+.gallery .back {
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+
+.gallery .img:hover .picture   {	
+	transform: rotateY(180deg);
+}
+
+.gallery .img:hover .front   {	
+	backface-visibility: hidden;
+}
+#section3 h2 {
+	color: #be1d3c;
+}
+#textRed {
+	color:#be1d3c;
+	
+}
+.txtPadding {
+	padding: 20px;
+	
+}
+#section4 h2{
+	color:#be1d3c;	
+}
+#section5 h2 {
+	color:#be1d3c;
+}
+.white {
+	color:white;
+}
+@media screen and (min-width: 600px) {
+
+.SuperContainer {
+            margin: auto;
+            max-width: 1000px;
+          }	
+	
+
+.form{
+    max-width: 35%;
+	margin-left: auto;
+	padding: 20px;
+   
+}
+#section1, #section3, #section4, #section5 {
+	box-sizing: border-box;
+	padding-top: 40px;
+	padding-bottom: 20px; 
+}
+}

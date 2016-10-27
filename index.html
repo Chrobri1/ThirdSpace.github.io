@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>cafe/restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- CSS3 Foundation -->
+<link rel="stylesheet" href="css/foundation/foundation.css"/>
+<link rel="stylesheet" href="css/foundation/normalize.css"/>
+
+<!-- CSS3 Foundation Icons-->
+<link rel="stylesheet" href="css/foundation/icons/foundation-icons.css" />
+
+<!-- Creative Link Effects -->
+<link rel="stylesheet" href="css/link_effect/component.css"/>
+<link rel="stylesheet" href="css/link_effect/demo.css"/>
+
+<!-- Creative Buttons Effects 
+<link rel="stylesheet" href="css/btn_effect/component.css"/>
+<link rel="stylesheet" href="css/btn_effect/btn/default.css"/> -->
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<!--custome Css -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+<!-- fonts  -->
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<div id="top"></div>
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#top">home</a>
+    </div>
+    <div class="collapse navbar-collapse cl-effect-14" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#menu">Menu</a></li>
+		<li><a href="#coffee">Coffee</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#stories">Our Story</a></li>
+		<li><a href="#gall">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+	
+
+    </div>
+  </div>
+</nav>
+  <div id ="jumbotron">
+  <div class="SuperContainer">
+    <h1></h1>
+    <!-- logo here -->
+	<br>
+  <div class="logo">
+  	             </br><img src="img/logo.png" class="img-responsive img-centered" alt=""></br></br>
+				 </br></br></br>
+				 </br></br></br></br>
+  </div>
+  </div>
+  </div>
+ 
+
+  <!-- Carrouser -->
+<div id="section1">
+<div class="SuperContainer"> 
+
+   <h2>What our customers say about us ?</h2>
+
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+	<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"Very friendly staff and good decently priced full Irish breakfast."<br><span style="font-style:normal;"> Timo S from Helsinki, Finland </span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, from Spain</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Stopped here to meet up with friends.The service was friendly and accommodating."<br><span style="font-style:normal;">Marie Helvais,from France</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> <!-- end carrouser --> 
+
+<audio id="audio" controls>
+  <source src="thirdAudio.ogg" type="audio/ogg">
+  <source src="thirdAudio.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+
+<div id="menu"></div>
+<section class="hero-content" id="gallery">
+<div class="SuperContainer">
+	
+		<div class="row">
+			<div class="large-12 columns about-content ">
+			<div id="overlay">
+				<h2 class="heading-primary">Our Menu</h2>
+				<p class="sub-heading text-center">"Food that tastes and looks good and doesn't cost too much"</p>
+
+					<p>At Third Space we want our food to taste great, to look great and to be good for you. We also want to keep the cost for you, our customer, low. To achieve this we will keep it simple, keep it healthy and never compromise on taste!</p>
+					<p>We pride ourselves on food quality and have been working hard to bring you an array of top quality fresh food. So whether it’s a favourite meal or something you’ve never tried before we are confident our menu will leave you satisfied and looking forward to your next Third Space experience.</p>
+					<p>So here’s our Menus:</p>
+ 
+			</div><!-- about-content -->
+		</div><!-- row-->
+		</div>
+
+
+    <div class="row">
+     <div class="large-12 columns gallery">
+      <div class="row">
+       <!-- picture 1 -->
+      <div class='large-3 columns img'>
+         <div class="picture">
+          <div class="front">
+            <img src="img/fullIrish.png" alt="#"/> 
+
+            <span class='caption'>FULL IRISH</span> 
+            <span class='btn-learn'>Learn More >></span>
+
+          </div><!-- .front -->
+      
+          <div class="back">
+
+              <p class="pic_title"><strong> FULL IRISH</strong>
+       
+                <span class='text-right'> 
+                 fried eggs, bacon, sausages, beans, fried potato, black & white pudding, mushrooms, tomato, & toast 
+                </span>
+
+              </p><!-- .pic_title -->
+                 
+              <br><br>
+
+              <p class='pic_source'>
+
+                <small>
+                Monday to Friday: 7: 30 to 11:30
+				Weekender: all day
+                </small>
+
+              </p><!-- .pic_source -->
+
+           </div><!-- .back --> 
+
+        </div><!-- picture -->         
+      </div><!-- img --> 
+
+
+       <!-- picture 2 -->
+      <div class='large-3 columns img'>
+         
+         <div class="picture">
+
+          <div class="front">
+
+            <img src="img/pankes.png" alt="#"/> 
+
+            <span class='caption'>PANCAKES</span> 
+            <span class='btn-learn'>Learn More >></span>
+
+          </div><!-- .front -->
+      
+          <div class="back">
+
+              <p class="pic_title"><strong>PANCAKES</strong>
+       
+                <span class='text-right'> 
+                Pancakes, with Maple Syrup & Bacon	
+                </span>
+
+              </p><!-- .pic_title -->
+                 
+              <br><br>
+
+              <p class='pic_source'>
+
+                <small>
+                Monday to Friday: 7: 30 to 11:30
+				Weekender: all day
+                </small>
+
+              </p><!-- .pic_source -->
+
+           </div><!-- .back --> 
+
+        </div><!-- picture -->         
+      </div><!-- img --> 
+
+        
+      <!-- picture 3 -->
+      <div class='large-3 columns img'>
+         
+         <div class="picture">
+
+          <div class="front">
+
+            <img src="img/pastry.png" alt="#"/> 
+
+            <span class='caption'>FRESH PASTRY</span> 
+            <span class='btn-learn'>Learn More >></span>
+
+          </div><!-- .front -->
+         
+          <div class="back">
+
+               <p class="pic_title"><strong> FRESH PASTRY</strong>
+              
+       
+                <span class='text-right'> 
+                Selection of croissants & pastries 
+                </span>
+
+              </p><!-- .pic_title -->
+                 
+              <br><br>
+
+              <p class='pic_source'>
+
+                <small>
+                Monday to Sunday 
+                </small>
+
+              </p><!-- .pic_source -->
+
+           </div><!-- .back --> 
+
+        </div><!-- picture -->         
+      </div><!-- img --> 
+
+
+      <!-- picture 4 -->
+      <div class='large-3 columns img'>
+         
+         <div class="picture">
+
+          <div class="front">
+
+            <img src="img/sandwiches.png" alt="#"/> 
+
+            <span class='caption'>SANDWICHES</span> 
+            <span class='btn-learn'>Learn More >></span>
+
+          </div><!-- .front -->
+         
+          <div class="back">
+
+              <p class="pic_title"><strong>PANINIS / WRAPS / SANDWICHES</strong>
+       
+                <span class='text-right'> 
+                Tuna Melt, Cheddar and Ham Panino, Chicken Caesar Wrap, Goat’s and  more 
+                </span>
+
+              </p><!-- .pic_title -->
+                 
+              <br><br>
+
+              <p class='pic_source'>
+
+                <small>
+              Served Monday to Friday from 11.30 till we run out or close!*
+                </small>
+
+              </p><!-- .pic_source -->
+
+           </div><!-- .back --> 
+
+        </div><!-- picture -->         
+      </div><!-- img --> 
+
+      </div><!-- .row -->
+
+  </div><!-- .gallery -->
+
+  <div class="textwhite">
+                <p class="heading-secondary"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Full Menu</button></p>
+                </span>
+  </div><!-- .row -->		
+</div>  
+</section>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="heading-primary">Full Menu</h4>
+        </div>
+        <div class="modal-body">
+          <h2 class="sub-heading red">Weekday Breakfast Menu</h2>
+<p class="sub-heading">Served Monday to Friday from 7.30 until 11.30am</p>
+<p>Third Space Full Irish with fried eggs, bacon, sausages, beans, fried potato, black & white pudding, mushrooms, tomato, & toast (2,4) €8.95</p>
+<p>Mini Irish breakfast with fried egg, bacon, sausage,
+pudding, tomato & toast (2,4) €6.50</p>
+<p>Veggie breakfast with fried eggs, mushrooms, tomato,
+fried potato, baked beans & toast (2,4) €7.95</p>
+<p>Eggs to order with toast (poached, scrambled or fried) €5.50</p>
+<p>(Served with sauté mushrooms, grilled tomato & fried tomato) (2,4,8) (Tea or coffee with any of the above: €1.00)</p>
+<p>Choose scrambled eggs with breakfast instead of fried eggs- extra €1</p>
+<p>Add extra breakfast item to your meal for €1 per serving</p>
+<p>Breakfast roll with bacon, sausage & fried egg (2,4) €5.50</p>
+<p>Porridge with honey or fruit compote (2,8) €3.50</p>
+<p>Granola with natural yoghurt and fruit compote (2,8) €3.95</p>
+<p>Homemade Muffins (2,4,8) €2.20</p>
+<p>Homemade Scones with jam & butter (2,4,8) €2.20</p>
+<p>Selection of croissants & pastries (2,4,8) €2.20</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!-- Container (coffe Section) -->
+<div id="coffee"></div>
+<div id="section3">
+  <div class="SuperContainer">
+	<h2 class="heading-primary">Our Coffee</h2>
+	<video controls>
+	    <source src="coffee2.mp4" type="video/mp4">
+		<source src="coffee2.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+	</video>
+	<div id="textRed">
+   <p class="heading-secondary">Would you like to buy our coffee?</p>
+	<p class="sub-heading">Visit our coffee page<a href="ourcoffee.html"><img src="Images/cart.png" width="50px" height="50px" /></a></p>
+  </div>
+  </div>
+,</div>
+
+
+<div id="events" class="container-fluid"></div>
+<section class="hero-content">
+	<div class="SuperContainer">
+			<div id="overlay">
+				<h2 class="heading-primary">Events at Third Space</h2>
+				<p class="sub-heading text-center">What we offer</p>
+				<p>Keep an eye on our Facebook Page for events such as music evenings, lectures, the “Square Meal,” meet-ups etc.. Or why not enquire about using Third for your group gathering or event? Book clubs, knitting groups, film societies, dramatic performances, art exhibitions, table quizzes, writers forums and parties are just some of the things that have happened in the space.</p>
+	  
+				<div class="row">
+					<div class="large-12 columns about-content ">
+		</div>
+	  </div>
+	  <h2>Contact us for any enquiry </h2>
+	  <div class="row">
+		<div class="col-sm-5">
+		  <p>Contact us and we'll get back to you within 24 hours.</p>
+		  <p><span class="glyphicon glyphicon-map-marker"></span>Dublin, Ireland </p>
+		  <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+		  <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+		</div>
+		<div class="col-sm-7">
+		  <div class="row">
+			<div class="col-sm-6 form-group">
+			  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+			</div>
+			<div class="col-sm-6 form-group">
+			  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+			</div>
+		  </div>
+		  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+		  <div class="row">
+			<div class="col-sm-12 form-group">
+			  <button class="btn btn btn-block btn-danger" type="submit">Send</button>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+</section>
+
+<div id="stories"></div>
+<div id="section4">
+<div class="SuperContainer">
+		<div class="txtPadding">
+			<h2 class="heading-primary">What is Third Space?</h2>
+				<p>Third Space is about people - customers and staff. From the first day the doors opened in Smithfield Third Space has welcomed a broad and diverse range of wonderful customers. And the staff team that has welcomed them has grown to love serving them well. Together we have had a lot of fun and shared in the adventure. This is your chance to meet a few of those people and hear their stories.</p>
+		</div>
+	<video class="large-12" controls>
+	    <source src="generalThird.mp4" type="video/mp4">
+		<source src="generalThird.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+	</video>
+  </div>
+</div>
+
+<!-- Gallery  -->
+<div id="gall"></div>
+<section class="hero-content">
+<div class="SuperContainer">
+    <h2 class="heading-primary">Gallery</h3>
+    <p class="sub-heading white">Not working space, not living space, but Third Space</p>
+
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/irish.jpg" alt="irish" width="400" height="300">
+          <p><strong>Irish Breakfast</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/people.jpg" alt="pasty" width="400" height="300">
+          <p><strong>Place to chat</strong></p>
+        
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/places1.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>Open space</strong></p>
+        </div>
+      </div>
+    </div>
+	 <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/relax.png" alt="irish" width="400" height="300">
+          <p><strong>Place to relax</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/smiling.png" alt="pasty" width="400" height="300">
+          <p><strong>Friendly Staff</strong></p>
+        
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/coffeew.png" alt="coffee" width="400" height="300">
+          <p><strong>High quality of coffee</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<div id="location"></div>
+<div id="section5">
+<h2 class="heading-primary">Location</h2>
+<p class="sub-heading">Unit 14, Smithfield Market, Dublin 7 </p>
+<p class="sub-heading">Email Third Space</p>
+<p class="sub-heading"> 01 529 7208</p>
+</div>
+<div id="googleMap" style="height:400px;width:100%;margin-top:1px;"></div>
+<script>
+var myCenter = new google.maps.LatLng(53.347704, -6.278699);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:17,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Third Space <a href="http://www.thirdspace.ie/" title="Visit w3schools">http://www.thirdspace.ie/</a></p>		
+</footer>
+
+</body>
+
+</html>
